@@ -8,7 +8,7 @@ import com.workintech.s19d1.entity.Actor;
 import com.workintech.s19d1.entity.Gender;
 import com.workintech.s19d1.entity.Movie;
 import com.workintech.s19d1.exceptions.ApiException;
-import com.workintech.s19d1.service.ActorService;
+import com.workintech.s19d1.service.ActorServiceImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -22,7 +22,6 @@ import org.springframework.test.web.servlet.MockMvc;
 
 import java.time.LocalDate;
 import java.util.Arrays;
-import java.util.List;
 
 import static org.hamcrest.Matchers.*;
 import static org.mockito.ArgumentMatchers.any;
@@ -40,7 +39,7 @@ class ControllerTest {
     private MockMvc mockMvc;
 
     @MockBean
-    private ActorService actorService;
+    private ActorServiceImpl actorService;
 
     @Autowired
     private ObjectMapper objectMapper;

@@ -148,7 +148,7 @@ class MainTest {
         // Verify that each property is correctly initialized
         assertEquals(expectedMessage, exceptionResponse.getMessage(), "The message should match the initialized value.");
         assertEquals(expectedStatus, exceptionResponse.getStatus(), "The status should match the initialized value.");
-        assertEquals(expectedDateTime, exceptionResponse.getDateTime(), "The dateTime should match the initialized value.");
+        assertEquals(expectedDateTime, exceptionResponse.getLocalDateTime(), "The dateTime should match the initialized value.");
     }
 
     @Test
